@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/* Style login */
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+}
+.login-container{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-container h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+.login-container form{
+    display: flex;
+    flex-direction: column;
+}
+.login-container form label{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.login-container form input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.login-container form button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.login-container form button:hover{
+    background: #555;
+}
+.login-container a{
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+    margin-top: 10px;
+}
+.login-container a:hover{
+    color: #555;
+}
+
+/* Style SignUp */
+.signUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+}
+.signUp-container{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.signUp-container h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+.signUp-container form{
+    display: flex;
+    flex-direction: column;
+}
+.signUp-container form label{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.signUp-container form input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.signUp-container form button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.signUp-container form button:hover{
+    background: #555;
+}
+.signUp-container a{
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+    margin-top: 10px;
+}
+.signUp-container a:hover{
+    color: #555;
+}
