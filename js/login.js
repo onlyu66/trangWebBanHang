@@ -23,7 +23,6 @@ btnLogin.addEventListener("click", function(e){
                 break;
             }else{
                flag=false;
-               break;
             }
         }
         if (flag) {
