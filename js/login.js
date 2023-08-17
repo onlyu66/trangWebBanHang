@@ -1,8 +1,9 @@
 // Bước 1: Lấy btn đăng nhập
 const btnLogin = document.querySelector(".login-signInButton");
 
+// console.log(login);
 // Bước 3: Lấy các ô input
-const inputUserLogin = document.querySelector(".input-login-email");
+const inputUserLogin = document.querySelector(".input-login-account");
 const inputPasswordLogin = document.querySelector(".input-login-password");
 // Bước 2: Viết sự kiện cho btn đăng nhập
 btnLogin.addEventListener("click", function(e){
@@ -28,8 +29,15 @@ btnLogin.addEventListener("click", function(e){
         if (flag) {
             alert("Đăng nhập thành công");
             window.location.href="index.html";
+
         }else{
             alert("Đăng nhập thất bại");
         }
     }
 });
+const login = document.querySelector("#login a");
+const signUp = document.querySelector("#sign-up a");
+
+login.addEventListener("click", function(){
+    login.style.display="none";
+})
