@@ -20,74 +20,230 @@
   <body>
     <div class="container">
       <header>
-        <h1>H&L Shop</h1>
-        <div id="login"><a href="login.html">Đăng nhập</a></div>
-        <div id="sign-up"><a href="signUp.html">Đăng ký</a></div>
-        
-      </header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <h1>L&H <span>Store</span></h1>
+        <!-- <div id="login"><a href="login.html">Đăng nhập</a></div>
+        <div id="sign-up"><a href="signUp.html">Đăng ký</a></div> -->
         <div class="shopping">
           <i class="fa-solid fa-cart-shopping"></i>
           <span class="quantity">0</span>
         </div>
-      </nav>
+      </header>
+      <div class="sticky-user">
+        <div class="user">
+          <!-- <p><u>User: </u></p> -->
+          <i class="fa-regular fa-user"></i>
+          <ul>
+            <li class="user-name"><a href="#"></a></li>
+            <li><a href="#">Thông tin cá nhân</a></li>
+            <li><a href="#">Thay đổi mật khẩu</a></li>
+            <li>
+              <a href="login.html"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng
+                xuất</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-cart">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="/images/Korina Villanueva.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><i class="fa-solid fa-list"></i> DANH MỤC SẢN PHẨM
+                    <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="product-portfolio">
+                    <li>Áo</li>
+                    <li>Jacket</li>
+                    <li>Quần</li>
+                    <li>Phụ kiện</li>
+                    <li>Balo-Túi</li>
+                    <li>SET</li>
+                    <li>Blazer</li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">MỚI VỀ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BÁN CHẠY</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    LIÊN HỆ
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-brands fa-facebook"></i> Facebook: L&H
+                        Shop</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-brands fa-instagram"></i> Instagram:
+                        _lhShop_611</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-brands fa-tiktok"></i> Tiktok: L&H Shop</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-brands fa-shopify"></i> Shopee: L&H Shop</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/slide-3505.jpg"
+              class="d-block w-100"
+              style="
+                transition: all 1s ease;
+                transform: scale(1.2, 1.2);
+                object-fit: cover;
+              "
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="/images/slide-3505.jpg" class="d-block w-100" />
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div> -->
+        </div>
+      </div>
       <div class="list"></div>
     </div>
-    <div class="card">
+
+    <div class="cart">
       <h1>Cart</h1>
-      <ul class="listCard"></ul>
+      <ul class="listCart"></ul>
       <div class="checkOut">
         <div class="total">0</div>
         <div class="closeShopping">Close</div>
       </div>
     </div>
+
+    <footer class="footer mt-auto py-3">
+     
+      <ul class="a">
+        <li>GIỚI THIỆU</li>
+        <li>CHĂM SÓC KHÁCH HÀNG</li>
+        <li>VẬN CHUYỂN & ĐỔI TRẢ</li>
+      </ul>
+      <div class="b">
+        Liên hệ: <br>
+        ngoclinhthai8@gmail.com
+      </div>
+      <ul class="c">
+        <li> <a href="#"><i class="fa-brands fa-facebook-f" style="color: white;"></i> Facebook</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li><a href="#"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+        <li><a href="#"><i class="fa-brands fa-shopify"></i> Shopee</a></li>
+      </ul>
+      <div class="d">
+        Địa chỉ: <br>
+        - Cn1 : 443/50 Lê Văn Sỹ phường 12 quận 3 <br>
+        - Cn2 : 101 đướng số 8 Linh Xuân Thủ Đức
+      </div>
+      <div class="e">
+        Bản quyền @ bởi L&H Store - Thời trang mang phong cách riêng của bạn
+    </div>
+    </footer>
+
+    <!-- <div class="container">
+      <div class="menu">
+        <div class="logo">shop<span>TITI</span></div>
+        <ul class="navbar-nav px-3">
+          <li><i class="fa-solid fa-earth-americas"></i><a href="login.html">Đăng nhập</a></li>
+
+            <li><i class="fa-solid fa-pen-to-square"></i><a href="signup.html">Đăng ký</a></li>
+          
+        </ul>
+        <ul>
+          <li class="active"><i class="fa-solid fa-house-user"></i> Home</li>
+          <li><i class="fa-solid fa-user"></i><a href="./users.html"> Users</a></li>
+          <li><i class="fa-solid fa-truck"></i><a href="./product.html">Product</a></li>
+          
+        </ul>
+        <ul>
+          <li><i class="fa-solid fa-heart"></i> Favourite</li>
+          <li><i class="fa-brands fa-tiktok"></i> Tiktok</li>
+          <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+          <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+        </ul>
+      </div>
+
+      
+
+      <div class="center">
+        <h1>HOME</h1>
+        <div class="shopping">
+          <img src="image/icon.PNG.jpg" />
+          <span class="quantity">0</span>
+        </div>
+        <div class="list"></div>
+      </div>
+      <div class="left"></div>
+      
+      <div class="cart">
+        <h1>Cart</h1>
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+          <div class="total">0</div>
+          <div class="closeShopping">Close</div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <footer class="footer mt-auto py-3">
+      <div class="contain">
+        <span
+          >Bản quyền @ bởi <a href="https://www.google.com/?hl=vi">google</a> -
+          .</span
+        >
+        <span class="text-muted">Thời trang mang phong cách riêng của bạn</span>
+      </div>
+    </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/app.js"></script>
-    <!-- <script src="/js/login.js"></script> -->
   </body>
 </html>

@@ -2,7 +2,8 @@
 const btnRegister = document.querySelector(".signUp-signInButton");
 // console.log(btnRegister);
 // Bước 3: Lâý các ô input ra
-const inputUserRegister = document.querySelector(".input-signUp-email");
+const inputUserRegister = document.querySelector(".input-signUp-account");
+const inputEmailRegister = document.querySelector(".input-signUp-email");
 const inputPasswordRegister = document.querySelector(".input-signUp-password");
 const inputConfirmPasswordRegister = document.querySelector(".input-confirm-signUp-password");
 const userLocal = JSON.parse(localStorage.getItem("users")) || [];
@@ -17,8 +18,9 @@ btnRegister.addEventListener("click", function (e) {
   } else {
     // Lấy dữ liệu ô input và thêm vào localStorage
     const user = {
-      email: inputUserRegister.value,
-      password: inputPasswordRegister.value,
+      account: inputUserRegister.value,
+      email: inputEmailRegister.value,
+      password: inputPasswordRegister.value
     };
 
     const updateUser = [...userLocal, user];

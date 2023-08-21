@@ -1,5 +1,6 @@
 //Validate Add Product Form:
 function validateForm() {
+    var image = document.getElementById("image").value;
     var name = document.getElementById("name").value;
     var price = document.getElementById("price").value;
     var quantity = document.getElementById("quantity").value;
@@ -8,16 +9,18 @@ function validateForm() {
     if(name === "") {
         alert("Please enter a name!");
         return false;
-    }
-    if(price < 0) {
+    }else if(image === ""){
+        alert("Please enter a image!");
+        return false;
+    }else if(price < 0) {
         alert("Price must be greater than 0!");
         return false;
     } else if(quantity < 0) {
         alert("Quantity must be greater than 0!");
+        return false;
     }
     return true;
 }
-
 
 // Show data:
 
@@ -31,15 +34,17 @@ function showData() {
 
     var htmlProducts = "";
     productLists.forEach(function(element, index) {
+        // let image = JSON.stringify(element.image).replace("C:\\fakepath\\","");
         htmlProducts += "<tr>";
-        htmlProducts += "<td>" + element.name + "</td>"
-        htmlProducts += "<td>" + element.price + "</td>"
-        htmlProducts += "<td>" + element.quantity + "</td>"
-        htmlProducts += "<td>" + element.description + "</td>"
+        htmlProducts += "<td>" + JSON.stringify(element.image)+ "</td>";
+        htmlProducts += "<td>" + element.name + "</td>";
+        htmlProducts += "<td>" + element.price + "</td>";
+        htmlProducts += "<td>" + element.quantity + "</td>";
+        htmlProducts += "<td>" + element.description + "</td>";
         htmlProducts += `<td> 
                             <button onclick="deleteData(`+ index +`)" class="btn btn-danger">Delete</button>
                             <button onclick="updateData(`+ index +`)" class="btn btn-primary">Update</button>
-                        </td>`
+                        </td>`;
         htmlProducts += "</tr>";
     });
 
@@ -52,6 +57,7 @@ document.onload = showData();
 
 function addData() {
     if(validateForm() === true) {
+        var image = document.getElementById("image").value;
         var name = document.getElementById("name").value;
         var price = document.getElementById("price").value;
         var quantity = document.getElementById("quantity").value;
@@ -66,6 +72,7 @@ function addData() {
         }
 
         productLists.push({
+            image: image,
             name: name,
             price: price,
             quantity: quantity,
@@ -74,7 +81,7 @@ function addData() {
 
         localStorage.setItem("productLists", JSON.stringify(productLists));
         showData();
-
+        document.getElementById("image").value = "";
         document.getElementById("name").value = "";
         document.getElementById("price").value = "";
         document.getElementById("quantity").value = "";
@@ -109,7 +116,7 @@ function updateData(index) {
     } else {
         productLists = JSON.parse(localStorage.getItem("productLists"));
     }
-
+    // document.getElementById("image").value = productLists[index].image;
     document.getElementById("name").value = productLists[index].name;
     document.getElementById("price").value = productLists[index].price;
     document.getElementById("quantity").value = productLists[index].quantity;
@@ -117,6 +124,7 @@ function updateData(index) {
 
     document.querySelector("#Update").onclick = function() {
         if(validateForm() === true) {
+            productLists[index].image = document.getElementById("image").value;
             productLists[index].name = document.getElementById("name").value;
             productLists[index].price = document.getElementById("price").value;
             productLists[index].quantity = document.getElementById("quantity").value;
@@ -124,7 +132,7 @@ function updateData(index) {
 
             localStorage.setItem("productLists", JSON.stringify(productLists));
             showData();
-
+            document.getElementById("image").value = "";
             document.getElementById("name").value = "";
             document.getElementById("price").value = "";
             document.getElementById("quantity").value = "";

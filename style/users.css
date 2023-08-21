@@ -1,3 +1,19 @@
 #Update {
     display: none;
 }
+.container h2{
+    position: relative;
+}
+.container .user{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    line-height: 30px;
+}
+.container .user .change-password a, .container .user .sign-out a{
+    text-decoration: none;
+    color: black;
+}
+.container .user .change-password:hover, .container .user .sign-out:hover, .container .user .ad:hover {
+    font-weight: 500;
+}
