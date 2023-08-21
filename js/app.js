@@ -14,7 +14,7 @@ closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 });
 
-let products =  [
+let products =  JSON.parse(localStorage.getItem("productLists")) || [
     {
         id: 1,
         name: 'ÁO SƠ MI',
